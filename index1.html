@@ -42,3 +42,45 @@
     
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Parte 1
+        let numeros = [1, 2, 3, 4, 5];
+        let suma = 0;
+
+        for (let i = 0; i < numeros.length; i++) {
+            document.write("El arreglo es: " + numeros[i] + "<br>");
+            suma += numeros[i];
+        }
+        document.write("La suma total es: " + suma + "<br>");
+    </script>
+    <script>
+        // Parte 2 
+        let num;
+        do {
+            num = parseInt(prompt("INGRESA UN NUMERO"));
+            if (num < 0) {
+                console.log("NUMERO INCORRECTO");
+            }
+        } while (num >= 0);
+    </script>
+    <script>
+        // Parte 3 
+        let contraseña = "gusta1";
+        let ingresado;
+        do {
+            ingresado = prompt("Digite una contraseña"); 
+            if (ingresado != contraseña) {
+                console.log("contraseña incorrecta");
+            }
+        } while (ingresado != contraseña);
+    </script>
+</body>
+</html>
