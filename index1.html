@@ -7,16 +7,31 @@
 </head>
 <body>
     <script>
+        //parte 1
         let numeros = [1, 2, 3, 4, 5];
         let suma = 0;
 
-        for(let i = 0; i < numeros.length; i++) {
-            documentwrite("el arreglo es: ",numeros[i])
+        for (let i = 0; i < numeros.length; i++) {
+            document.write("El arreglo es: " + numeros[i] + "<br>");
+            suma += numeros[i];
         }
-        for(let i = 0; i < numeros.length; i++) {
-            suma = numeros[i]+suma;
+        document.write("La suma total es: " + suma);
+    </script>
+    <script>
+        //parte 2 
+        let num = 0;
+        while(num > 0){
+            parseInt(prompt("INGRESA UN NUMERO"));
+            if (num < 0 ){
+                console.log("NUMERO INCORRECTO");
+            }
         }
-         documentwrite("la suma total es: ",suma);
+
+
+
+    </script>
+    <script>
+        //parte 3 
 
     </script>
 </body>
