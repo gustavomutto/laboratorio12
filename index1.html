@@ -19,9 +19,9 @@
     </script>
     <script>
         //parte 2 
-        let num = 0;
-        while(num > 0){
-            parseInt(prompt("INGRESA UN NUMERO"));
+        let num ;
+        while(num >= 0){
+            num = parseInt(prompt("INGRESA UN NUMERO"));
             if (num < 0 ){
                 console.log("NUMERO INCORRECTO");
             }
@@ -32,11 +32,11 @@
         let contraseña = "gusta1";
         let ingresado ;
         do {
-            ingresado = print("digite una contraseña ");
+            ingresado = prompt("Digite una contraseña"); 
             if ( ingresado != contraseña){
                 console.log("contraseña incorrecta");
             }
-        } while (ingresado = contraseña);
+        } while (ingresado != contraseña);
 
     </script>
     
