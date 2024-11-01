@@ -6,14 +6,16 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="resultado"></div>
     <script>
         let numeros = [1, 2, 3, 4, 5];
         let suma = 0;
-        for(let i = 0; i < numeros.length;i++){
-            console.log(numeros[i]);
+
+        for(let i = 0; i < numeros.length; i++) {
             suma += numeros[i];
         }
-        console.log("Suma total:", suma);
+
+        document.getElementById('resultado').innerText = "Suma total: " + suma;
     </script>
 </body>
 </html>
